@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --white: #ffffff;
+  --grey: #414141;
+  --red: 	#d62d20;
+  --amarillo: #ffa700;
+  --blue:#3367d6;
+  --orange:#e34c26;
+  --green:#008744;
+  --blueReact: #61DBFB;
+}
+/* imagen de fondo */
+body{
+  background-image: url("https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNvZGV8ZW58MHx8MHx8&w=1000&q=80");
+  background-color: #8e8e8e;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+/* imagen del navbar */
+#code{
+  font-size: 1.5rem;
+  color: black;
+}
+#code:hover{
+  font-size: 2rem;
+  transition: all 0.2s ease;
+  text-shadow: 1px 1px 10px var(--white);
+}
+/* navbar */
+.navbar__header a{
+  color: var(--grey) !important;
+}
+
+.navbar__header a:hover{
+  color: var(--white) !important;
+  transform: scale(1.1) !important;
+  transition: all 0.2s ease !important;
+  text-shadow: 1px 1px 10px !important;
+}
+
+/* opción seleccionada en el narvbar */
+.navbar__header a .selected{
+  color: var(--white) !important;
+}
+
