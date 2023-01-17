@@ -22,14 +22,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
 
   <!-- SEO -->
   <title>Sobre nosotros</title>
   <link rel="icon" type="image/x-icon" href="../imagen/nosotrosfavi.png">
 </head>
 
-<body>
-  <header class="sticky-lg-top">
+<body> 
+  <header class="container position-fixed">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <button class="navbar-toggler animate__animated animate__fadeInDown" type="button"
               data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
@@ -43,37 +44,48 @@
           <i id="code" class="fa-solid fa-code animate__animated animate__shakeX text-light opacity-75 d-none d-md-block"></i>
           <ul class="navbar-nav text-center">
             <li class="nav-item">
-              <a class="nav-link" href="#Home">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#About">Sobre mí</a>
+                <a class="nav-link" href="#about">Sobre mí</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Projects">Proyectos</a>
+                <a class="nav-link" href="#projects">Proyectos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Contact">Contacto</a>
+                <a class="nav-link" href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
+  <main>
+    <div id="home" class="d-flex justify-content-center align-items-center">
+      <img id="img__home" src="https://ouch-cdn2.icons8.com/vZD-nOO0-rKGloPBW0WjLQF-i8hfkpa7QWY_3L4YTGA/rs:fit:684:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzAx/L2Y1ZWI5ZGEwLTM3/ZWMtNDUxYy1iODNl/LTVjMzc1NGU5NjQx/NC5zdmc.png" alt="imagen" height=200px">
+      <div id="home__presentation" class="text-center">
+        <span id="home__name">Enrique Guillermo</span><br>
+        <span id="home__desc">Desarrollador</span>
+      </div>
+    </div>
+    <div id="about" class="ola">Acerca de mí</div>
+    <div id="projects" class="ola">Portafolio</div>
+  </main>
     
-  <footer class="container text-center">
-    <h3>Contacto</h3>
+  <footer id="contact" class="container text-center">
+    <h2>Contacto</h2>
     <div class="d-flex justify-content-evenly">
       <section>
-        <i class="fa-solid fa-envelope footer_icons"></i><br>
+        <a href="mailto:enrique2003junior@gmail.com?Subject=Interesado%20en%20trabajar%20contigo." target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope footer_icons"></i></a><br>
         <span>Email</span>
       </section>
       <section>
-        <i class="fa-brands fa-github footer_icons"></i><br>
+        <a href="https://github.com/Guillexd?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github footer_icons"></i></a>
+        <br>
         <span>Github</span>
       </section>
       <section>
-        <i class="fa-brands fa-whatsapp footer_icons"></i><br>
+        <a href="https://wa.me/51995578780" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp footer_icons"></i></a><br>
         <span>Whatsapp</span>
       </section>
     </div>

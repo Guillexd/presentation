@@ -26,8 +26,18 @@ body{
   background-position: center;
   height: 100%;
   width: 100%;
-  position: absolute;
-  z-index: -1;
+  z-index: -999;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h2{
+  font-family: 'Merriweather', serif;
+  color: var(--blue)
+}
+/* HEADER */
+header{
+  z-index: 999;
 }
 
 /* imagen del navbar */
@@ -57,14 +67,42 @@ body{
 }
 
 .footer_icons{
-  color: var(--grey);
+  color: var(--white);
   font-size: 4rem;
 }
 
-footer section:hover > .footer_icons{
-  transform: scale(1.3);
-  transition: all .4s ease;
-  text-shadow: 1px 1px 10px;
+footer section span{
+  color: var(--white);
 }
 
-/* poner link para emai github y ws */
+footer section:hover > a .footer_icons{
+  transform: scale(1.2);
+  transition: all .3s ease;
+  text-shadow: 1px 1px 10px;
+}
+/* MAIN */
+/* home */
+main #home{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+}
+
+main #img__home{
+  border-radius: 50%;
+}
+
+main #home__presentation #home__name{
+  color: var(--blue);
+  font-size: 4rem;
+  font-family: 'Merriweather', serif;
+}
+
+main #home__presentation #home__desc{
+  color: var(--blueReact);
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+}
+.ola{
+  min-height: 100vh;
+}
