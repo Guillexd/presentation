@@ -7,20 +7,17 @@
 }
 
 :root{
+  --black: rgba(0, 0, 0, 0.7);
   --white: #ffffff;
+  --white-text: rgba(255, 255, 255, 0.5);
   --grey: #414141;
-  --red: 	#d62d20;
-  --amarillo: #ffa700;
   --blue:#3367d6;
-  --orange:#e34c26;
-  --green:#008744;
   --blueReact: #61DBFB;
 }
 
 /* imagen de fondo */
 body{
   background-image: url("https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNvZGV8ZW58MHx8MHx8&w=1000&q=80");
-  background-color: #8e8e8e;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -66,6 +63,12 @@ header{
   color: var(--white) !important;
 }
 
+/* FOOTER */
+footer{
+  height: 30vh;
+  background-color: var(--black);
+}
+
 .footer_icons{
   color: var(--white);
   font-size: 4rem;
@@ -80,12 +83,13 @@ footer section:hover > a .footer_icons{
   transition: all .3s ease;
   text-shadow: 1px 1px 10px;
 }
+
 /* MAIN */
 /* home */
-main #home{
-  background-color: rgba(0, 0, 0, 0.5);
+.secciones{
   height: 100vh;
   width: 100vw;
+  background-color: var(--black);
 }
 
 main #img__home{
@@ -103,6 +107,75 @@ main #home__presentation #home__desc{
   font-size: 2rem;
   font-family: 'Merriweather', serif;
 }
-.ola{
-  min-height: 100vh;
+
+
+/* about */
+main #about{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: 
+  "title title"
+  "subtitle__about subtitle__skills"
+  "content__about content__skills"
+  ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15% 15% auto;
+}
+
+main .title{
+  grid-area: title;
+  justify-self: center;
+  align-self: center;
+}
+
+main .subtitle__about{
+  grid-area: subtitle__about;
+  justify-self: center;
+  align-self: center;
+}
+
+main .subtitle__skills{
+  grid-area: subtitle__skills;
+  justify-self: center;
+  align-self: center;
+}
+
+main .content__about{
+  grid-area: content__about;
+  width: 50%;
+  justify-self: center;
+}
+
+main .content__skills{
+  grid-area: content__skills;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+main .content__skills section{
+  height: 50%;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .content__skills section i{
+  color: var(--white);
+  text-shadow: 1px 1px 5px;
+  font-size: 5rem;
+}
+
+main .subtitle__about, main .subtitle__skills{
+  color: var(--blueReact);
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+main .content__about p, main .content__skills span{
+  color: var(--white-text);
+  font-size: 1.1rem;
 }

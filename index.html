@@ -16,7 +16,7 @@
   <script src="https://kit.fontawesome.com/a6c690938d.js" crossorigin="anonymous"></script>
 
   <!-- ANIMATION -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,14 +25,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
 
   <!-- SEO -->
-  <title>Sobre nosotros</title>
+  <title>Guille / Developer</title>
   <link rel="icon" type="image/x-icon" href="../imagen/nosotrosfavi.png">
 </head>
 
 <body> 
-  <header class="container position-fixed">
+  <header class="container-fluid position-fixed">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <button class="navbar-toggler animate__animated animate__fadeInDown" type="button"
+      <button class="d-lg-none navbar-toggler animate__animated animate__fadeInDown" type="button"
               data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
               aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -61,18 +61,52 @@
     </nav>
   </header>
   <main>
-    <div id="home" class="d-flex justify-content-center align-items-center">
-      <img id="img__home" src="https://ouch-cdn2.icons8.com/vZD-nOO0-rKGloPBW0WjLQF-i8hfkpa7QWY_3L4YTGA/rs:fit:684:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzAx/L2Y1ZWI5ZGEwLTM3/ZWMtNDUxYy1iODNl/LTVjMzc1NGU5NjQx/NC5zdmc.png" alt="imagen" height=200px">
+    <div id="home" class="d-flex justify-content-center align-items-center secciones" data-aos="fade-right">
+      <img id="img__home" src="https://ouch-cdn2.icons8.com/vZD-nOO0-rKGloPBW0WjLQF-i8hfkpa7QWY_3L4YTGA/rs:fit:684:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzAx/L2Y1ZWI5ZGEwLTM3/ZWMtNDUxYy1iODNl/LTVjMzc1NGU5NjQx/NC5zdmc.png" alt="porgramming.jpg" height=200px">
       <div id="home__presentation" class="text-center">
         <span id="home__name">Enrique Guillermo</span><br>
         <span id="home__desc">Desarrollador</span>
       </div>
     </div>
-    <div id="about" class="ola">Acerca de mí</div>
-    <div id="projects" class="ola">Portafolio</div>
+    <div id="about" class="secciones">
+      <h2 class="title">Sobre mí</h2>
+      <h3 class="subtitle__about">Desarrollador / Estudiante de Ingeniería de Software</h3>
+      <div class="content__about" data-aos="fade-down">
+        <p>Disfruto el desarrollo por la satisfacción que obtengo al superar los desafíos. Estoy motivado por la oportunidad que brinda el software para impactar postiivamente en la vida de un individuo y el mundo en su conjunto.</p>
+        <a class="btn btn-primary btn-lg fs-6" download="enrique_guillermo_cv" href="./CV.pdf">Descargar CV</a>
+      </div>
+      <h3 class="subtitle__skills">Tecnologías</h3>
+      <div class="content__skills">
+        <section data-aos="fade-up" data-aos-delay="200">
+          <i class="fa-brands fa-html5"></i>
+          <span>HTML</span>
+        </section>
+        <section data-aos="fade-up" data-aos-delay="800">
+          <i class="fa-brands fa-git-alt"></i>
+          <span>Git</span>
+        </section>
+        <section data-aos="fade-up" data-aos-delay="400">
+          <i class="fa-brands fa-css3-alt"></i>
+          <span>CSS</span>
+        </section>
+        <section data-aos="fade-up" data-aos-delay="1000">
+          <i class="fa-brands fa-bootstrap"></i>
+          <span>Boostrap</span>
+        </section>
+        <section data-aos="fade-up" data-aos-delay="600">
+          <i class="fa-brands fa-square-js"></i>
+          <span>Javascript</span>
+        </section>
+        <section data-aos="fade-up" data-aos-delay="1200">
+          <i class="fa-brands fa-react"></i>
+          <span>React js</span>
+        </section>
+      </div>
+    </div>
+    <div id="projects" class="secciones">Portafolio</div>
   </main>
     
-  <footer id="contact" class="container text-center">
+  <footer id="contact" class="container-fluid text-center">
     <h2>Contacto</h2>
     <div class="d-flex justify-content-evenly">
       <section>
@@ -95,6 +129,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="./js/index.js"></script>
 </body>
 
