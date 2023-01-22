@@ -123,52 +123,52 @@ main #about{
   grid-template-rows: 15% 15% auto;
 }
 
-main .title{
+main #about .title{
   grid-area: title;
   justify-self: center;
   align-self: center;
 }
 
-main .subtitle__about{
+main #about .subtitle__about{
   grid-area: subtitle__about;
   justify-self: center;
   align-self: center;
 }
 
-main .subtitle__skills{
+main #about .subtitle__skills{
   grid-area: subtitle__skills;
   justify-self: center;
   align-self: center;
 }
 
-main .content__about{
+main #about .content__about{
   grid-area: content__about;
   width: 50%;
   justify-self: center;
 }
 
-main .content__skills{
+main #about .content__skills{
   grid-area: content__skills;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-main .content__skills section{
+main #about .content__skills section{
   height: 50%;
-  width: 33%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main .content__skills section i{
+main #about .content__skills section i{
   color: var(--white);
   text-shadow: 1px 1px 5px;
   font-size: 5rem;
 }
 
-main .subtitle__about, main .subtitle__skills{
+main #about .subtitle__about, main .subtitle__skills{
   color: var(--blueReact);
   font-size: 2rem;
   font-family: 'Merriweather', serif;
@@ -180,3 +180,120 @@ main .content__about p, main .content__skills span{
   font-size: 1.1rem;
 }
 
+/* projects */
+main #projects #examples__container{
+  flex: 1;
+}
+
+main #projects #examples__container .examples{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #projects #examples__container .examples figure{
+  width: 70%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+main #projects #examples__container .examples img{
+  width: 100%;
+}
+
+main #projects #examples__container .examples .information__shadow{
+  position: absolute;
+  transform: translateY(100%);
+  height: 100%;
+  width: 100%;
+  background-color: var(--black);
+  transition: all .5s ease ;
+}
+
+main #projects #examples__container .examples figure:hover>.information__shadow{
+  transform: translateY(-100%);
+}
+
+main #projects #examples__container .examples figure:hover img{
+  transition: all .9s ease;
+  transform: scale(1.2);
+}
+
+main #projects #examples__container .examples figure:not(:hover) img{
+  transition: all .9s ease;
+}
+
+main #projects #examples__container .examples h3{
+  color: var(--white);
+}
+main #projects #examples__container .examples span{
+  color: var(--white);
+}
+#menu li .style_menu__list{
+  color: var(--blueReact) !important;
+  text-shadow: 1px 1px 5px;
+}
+/* Queries */
+@media screen and (max-width: 1000px) {
+  main #projects{
+    height: auto;
+  }
+
+  main #projects #examples__container .examples{
+    width: 90%;
+    margin: auto;
+  }
+  
+  main #projects #examples__container .examples figure{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+
+  main #home__presentation #home__name{
+    font-size: 3rem;
+  }
+  
+  main #home__presentation #home__desc{
+    font-size: 1.5rem;
+  }
+
+  main #about{
+    height: auto;
+    grid-template-areas: 
+    "title"
+    "subtitle__about"
+    "content__about"
+    "subtitle__skills"
+    "content__skills"
+    ;
+    grid-template-columns: 1fr;
+  }
+
+  main #about h2{
+    font-size: 2rem;
+  }
+
+  main #about .content__about, a{
+    width: 90%;
+    justify-self: center;
+    margin: 10px auto;
+  }
+
+  main #projects h2{
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+
+  /* estilos navbar */
+  #style__menu{
+    background-color: var(--black);
+    border-radius: 10px;
+  }
+
+  #menu li a{
+    color: var(--white)!important;
+  }
+}

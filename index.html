@@ -37,12 +37,12 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="container-fluid">
+      <div id="style__menu" class="container-fluid">
         <!-- NAVEGACIÓN -->
         <div class="collapse navbar-collapse justify-content-between navbar__header" id="navbarNav">
           <i id="code"
             class="fa-solid fa-code animate__animated animate__shakeX text-light opacity-75 d-none d-md-block"></i>
-          <ul class="navbar-nav text-center">
+          <ul id="menu" class="navbar-nav text-center">
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
@@ -60,8 +60,9 @@
       </div>
     </nav>
   </header>
-  <main>
-    <div id="home" class="d-flex justify-content-center align-items-center secciones" data-aos="fade-right">
+  <main class="d-flex flex-wrap">
+    <div id="home" class="d-flex flex-column justify-content-center align-items-center secciones" data-aos="fade-right">
+      <h2 class="title">Home</h2>
       <img id="img__home"
         src="https://ouch-cdn2.icons8.com/vZD-nOO0-rKGloPBW0WjLQF-i8hfkpa7QWY_3L4YTGA/rs:fit:684:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzAx/L2Y1ZWI5ZGEwLTM3/ZWMtNDUxYy1iODNl/LTVjMzc1NGU5NjQx/NC5zdmc.png"
         alt="porgramming.jpg" height=200px">
@@ -107,25 +108,47 @@
         </section>
       </div>
     </div>
-    <div id="projects" class="secciones">
+    <div id="projects" class="secciones d-flex flex-column">
       <h2 class="text-center pt-3">Proyectos</h2>
-      <div id="examplesc_container">
+      <div id="examples__container" class="d-flex flex-column flex-lg-row flex-wrap justify-content-center align-item-center gap-2">
         <section class="examples">
           <figure>
-            <img src="" alt="Web-Page---Hotel">
-            <figcaption>Intenta ver si se puede hacer el efecto con hocer::after o before pensando pe chatp xd</figcaption>
+            <img src="./assets/img/web_page_hotel.png" alt="Web-Page---Hotel">
+            <div class="information__shadow d-flex flex-column justify-content-center align-items-center">
+              <h3>Hotel Web Page</h3>
+              <span>Web Application: Html, CSS y Boostrap.</span><br>
+              <div class="d-flex justify-content-around w-100">
+                <a class="btn btn-primary link__query" href="https://guillexd.github.io/Web-Page---Hotel/" target="_blank" rel="noopener noreferrer">Website</a>
+                <a class="btn btn-secondary" href="https://github.com/Guillexd/Web-Page---Hotel.git" target="_blank" rel="noopener noreferrer">Github</a>
+              </div>
+            </div>
           </figure>
         </section>
-        <section class="examples">ejemplo2
+        
+        <section class="examples">
           <figure>
-            <img src="" alt="Carrito_de_compras_js">
-            <figcaption></figcaption>
+            <img src="./assets/img/kar_js.png" alt="Carrito_de_compras_js">
+            <div class="information__shadow d-flex flex-column justify-content-center align-items-center">
+              <h3>Carrito de compras</h3>
+              <span>Web Application: Html, CSS y Javascript.</span><br>
+              <div class="d-flex justify-content-around w-100">
+                <a class="btn btn-primary link__query" href="https://guillexd.github.io/Carrito_de_compras_js/" target="_blank" rel="noopener noreferrer">Website</a>
+                <a class="btn btn-secondary" href="https://github.com/Guillexd/Carrito_de_compras_js.git" target="_blank" rel="noopener noreferrer">Github</a>
+              </div>
+            </div>
           </figure>
         </section>
-        <section class="examples">ejemplo3
+        <section class="examples">
           <figure>
-            <img src="" alt="Carrito_de_compras_React">
-            <figcaption></figcaption>
+            <img src="./assets/img/kar_Reactjs.png" alt="Carrito_de_compras_React">
+            <div class="information__shadow d-flex flex-column justify-content-center align-items-center">
+              <h3>Carrito de compras</h3>
+              <span>Web Application: Html, CSS y Javascript(React).</span><br>
+              <div class="d-flex justify-content-around w-100">
+                <a class="btn btn-primary disabled" href="#">Website</a>
+                <a class="btn btn-secondary link__query" href="https://github.com/Guillexd/Carrito_de_compras_React.git" target="_blank" rel="noopener noreferrer">Github</a>
+              </div>
+            </div>
           </figure>
         </section>
       </div>
