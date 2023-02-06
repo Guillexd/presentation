@@ -34,5 +34,9 @@ const watchTitles = (entries, observer)=>{
     }
   });
 }
-const observator = new IntersectionObserver(watchTitles);
+const observator = new IntersectionObserver(watchTitles, {
+  root: null, //vista de pantalla
+  rootMargin: '0px 0px 0px 0px', // margen del root(vista de pantalla)
+  threshold: 1 //profundidad de entrada del objeto (por defecto: 0)
+});
 titles.forEach(el=>observator.observe(el));
