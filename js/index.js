@@ -6,10 +6,10 @@ AOS.init({
 
 d=document;
 d.addEventListener('click', (e)=>{
-  if(e.target.matches('.examples *') && window.innerWidth<1000){
-    const Redirection = e.target.closest('figure').lastElementChild.lastElementChild.lastElementChild.getAttribute
-    ('href');
-    e.target.closest('section').innerHTML+=`<meta http-equiv="refresh" content="0; url=${Redirection}">`;
+  if(e.target.matches('.examples figure img') && window.innerWidth<1000){
+    const Redirection = e.target.closest('figure').lastElementChild.lastElementChild.lastElementChild;
+    Redirection.click()
+    // e.target.closest('section').innerHTML+=`<meta http-equiv="refresh" content="0; url=${Redirection}">`;
   }
 
   if(e.target.matches('#menu *') && window.innerWidth<1000){
