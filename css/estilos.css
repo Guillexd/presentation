@@ -150,13 +150,11 @@ main #about .content__about{
 main #about .content__skills{
   grid-area: content__skills;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 
 main #about .content__skills section{
-  height: 50%;
-  width: 30%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,6 +179,10 @@ main .content__about p, main .content__skills span{
 }
 
 /* projects */
+main #projects{
+  background-color: var(--black);
+}
+
 main #projects #examples__container{
   flex: 1;
 }
@@ -236,6 +238,11 @@ main #projects #examples__container .examples span{
   text-shadow: 1px 1px 5px;
 }
 /* Queries */
+@media screen and (max-width: 1450px) {
+  main #projects #examples__container .examples figure{
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1000px) {
   main #projects{
     height: auto;

@@ -4,7 +4,7 @@ AOS.init({
     once: true
 });
 
-d=document;
+const d=document;
 d.addEventListener('click', (e)=>{
   if(e.target.matches('.examples figure img') && window.innerWidth<1000){
     const Redirection = e.target.closest('figure').lastElementChild.lastElementChild.lastElementChild;
