@@ -32,9 +32,26 @@ h2{
   font-family: 'Merriweather', serif;
   color: var(--blue)
 }
+
+#fullScreenbtn{
+  color: #fff;
+  position: fixed;
+  z-index: 999;
+  right: 12px;
+  top: 8px;
+}
+
+body::-webkit-scrollbar{
+  background-color: black;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgba(128, 128, 128, 0.10);
+  border-radius: 10px;
+}
+
 /* HEADER */
 header{
-  z-index: 999;
+  z-index: 998;
 }
 
 /* imagen del navbar */

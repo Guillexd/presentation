@@ -4,8 +4,36 @@ AOS.init({
 });
 
 const d = document;
+const btnFullScreen = d.querySelector('#fullScreenbtn');
+const body = d.documentElement;
 const projectsContainer = d.querySelector("#examples__container");
 const $fragment = d.createDocumentFragment();
+
+btnFullScreen.addEventListener('click', ()=>{
+  if (document.fullscreenElement) {
+    // Si el documento está en pantalla completa, salir de ella
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) { /* Firefox */
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { /* Chrome, Safari y Opera */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* Internet Explorer y Edge */
+      document.msExitFullscreen();
+    }
+  } else {
+    // Si el documento no está en pantalla completa, poner el elemento en pantalla completa
+    if (body.requestFullscreen) {
+      body.requestFullscreen();
+    } else if (body.mozRequestFullScreen) { /* Firefox */
+      body.mozRequestFullScreen();
+    } else if (body.webkitRequestFullscreen) { /* Chrome, Safari y Opera */
+      body.webkitRequestFullscreen();
+    } else if (body.msRequestFullscreen) { /* Internet Explorer y Edge */
+      body.msRequestFullscreen();
+    }
+  }
+})
 
 d.addEventListener("click", (e) => {
   if (e.target.matches(".examples figure img") && window.innerWidth < 1000) {
