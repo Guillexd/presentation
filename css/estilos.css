@@ -82,8 +82,8 @@ header{
 
 /* FOOTER */
 footer{
-  height: 30vh;
   background-color: var(--black);
+  padding-bottom: 10px;
 }
 
 .footer_icons{
@@ -104,7 +104,7 @@ footer section:hover > a .footer_icons{
 /* MAIN */
 /* home */
 .secciones{
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: var(--black);
 }
@@ -128,7 +128,7 @@ main #home__presentation #home__desc{
 
 /* about */
 main #about{
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: grid;
   grid-template-areas: 
@@ -136,8 +136,8 @@ main #about{
   "subtitle__about subtitle__skills"
   "content__about content__skills"
   ;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 15% 15% auto;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 15% minmax(15%, 20%) auto;
 }
 
 main #about .title{
