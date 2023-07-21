@@ -1,42 +1,32 @@
 [
     {
-        "image": "web_page_hotel",
-        "alt": "Web-Page---Hotel",
-        "title": "Hotel Web Page",
-        "description": "Web Application: Html, CSS y Boostrap.",
-        "firstbtnLink": "https://guillexd.github.io/Web-Page---Hotel/",
-        "firstbtnName": "Website",
-        "secondbtnLink": "https://github.com/Guillexd/Web-Page---Hotel.git",
-        "secondbtnName": "Github"
-    },
-    {
-        "image": "kar_js",
-        "alt": "Carrito_de_compras_js",
-        "title": "Carrito de compras",
-        "description": "Web Application: Html, CSS y Javascript.",
-        "firstbtnLink": "https://guillexd.github.io/Carrito_de_compras_js/",
-        "firstbtnName": "Website",
-        "secondbtnLink": "https://github.com/Guillexd/Carrito_de_compras_js.git",
-        "secondbtnName": "Github"
-    },
-    {
-        "image": "kar_Reactjs",
-        "alt": "Carrito_de_compras_React",
-        "title": "Carrito de compras",
-        "description": "Web Application: Html, CSS y Javascript(React).",
+        "image": "bus_vue_laravel",
+        "alt": "App desarrollada en Softiclab",
+        "title": "Aplicación para empresa de transporte de Softicslab",
+        "description": "Web Application: Desarrollada en Softicslab con Javascript(Vuejs), PHP(Laravel) y SQL.",
         "firstbtnLink": "",
         "firstbtnName": "Website",
-        "secondbtnLink": "https://github.com/Guillexd/Carrito_de_compras_React.git",
-        "secondbtnName": "Github"
+        "secondbtnLink": "https://softicslab.com",
+        "secondbtnName": "Empresa"
     },
     {
-        "image": "login_php",
-        "alt": "login_php_sql",
-        "title": "Aplicación de login",
-        "description": "Web Application: Html, CSS, Javascript, PHP y SQL.",
-        "firstbtnLink": "https://youtu.be/akyl08gUgJQ",
-        "firstbtnName": "Video",
-        "secondbtnLink": "https://github.com/Guillexd/PHP-Login.git",
+        "image": "res_vue_laravel",
+        "alt": "App desarrollada en Softiclab",
+        "title": "Aplicación para restaurante interactica(CRUD)",
+        "description": "Web Application: Desarrollada en Softicslab con Javascript(Vuejs), PHP(Laravel) y SQL.",
+        "firstbtnLink": "",
+        "firstbtnName": "Website",
+        "secondbtnLink": "https://softicslab.com",
+        "secondbtnName": "Empresa"
+    },
+    {
+        "image": "login_kar",
+        "alt": "Reactjs_Expressjs_mongoDB_Cookies",
+        "title": "Carrito de compras con Login",
+        "description": "Web Application: Html, CSS, Javascript(Reactjs), Nodejs(Express js), NoSQL(MongoDB) y Cookies.",
+        "firstbtnLink": "",
+        "firstbtnName": "Website",
+        "secondbtnLink": "https://github.com/Guillexd/React_Express_Project.git",
         "secondbtnName": "Github"
     },
     {
@@ -47,16 +37,6 @@
         "firstbtnLink": "",
         "firstbtnName": "Website",
         "secondbtnLink": "https://github.com/Guillexd/Chat_nodejs.git",
-        "secondbtnName": "Github"
-    },
-    {
-        "image": "login_kar",
-        "alt": "Reactjs_Expressjs_mongoDB_Cookies",
-        "title": "Carrito de compras con Login",
-        "description": "Web Application: Html, CSS, Javascript(Reactjs), Nodejs(Express js), NoSQL(MongoDB) y Cookies.",
-        "firstbtnLink": "",
-        "firstbtnName": "Website",
-        "secondbtnLink": "https://github.com/Guillexd/React_Express_Project.git",
         "secondbtnName": "Github"
     },
     {
@@ -76,27 +56,27 @@
         "description": "Web Application: Boostrap, Jquery(DataTables), PHP(Laravel) y SQL.",
         "firstbtnLink": "",
         "firstbtnName": "Website",
-        "secondbtnLink": "https://github.com/Guillexd/Laravel_login_crud_proyect.git",
+        "secondbtnLink": "https://github.com/Guillexd/Business_directory_Laravel.git",
         "secondbtnName": "Github"
     },
     {
-        "image": "bus_vue_laravel",
-        "alt": "App desarrollada en Softiclab",
-        "title": "Aplicación para empresa de transporte de Softicslab",
-        "description": "Web Application: Desarrollada en Softicslab con Javascript(Vuejs), PHP(Laravel) y SQL.",
-        "firstbtnLink": "",
+        "image": "web_page_hotel",
+        "alt": "Web-Page---Hotel",
+        "title": "Hotel Web Page",
+        "description": "Web Application: Html, CSS y Boostrap.",
+        "firstbtnLink": "https://guillexd.github.io/Web-Page---Hotel/",
         "firstbtnName": "Website",
-        "secondbtnLink": "https://softicslab.com",
-        "secondbtnName": "Empresa"
+        "secondbtnLink": "https://github.com/Guillexd/Web-Page---Hotel.git",
+        "secondbtnName": "Github"
     },
     {
-        "image": "res_vue_laravel",
-        "alt": "App desarrollada en Softiclab",
-        "title": "Aplicación para restaurante interactica(CRUD)",
-        "description": "Web Application: Desarrollada en Softicslab con Javascript(Vuejs), PHP(Laravel) y SQL.",
-        "firstbtnLink": "",
+        "image": "kar_js",
+        "alt": "Carrito_de_compras_js",
+        "title": "Carrito de compras",
+        "description": "Web Application: Html, CSS y Javascript.",
+        "firstbtnLink": "https://guillexd.github.io/Carrito_de_compras_js/",
         "firstbtnName": "Website",
-        "secondbtnLink": "https://softicslab.com",
-        "secondbtnName": "Empresa"
+        "secondbtnLink": "https://github.com/Guillexd/Carrito_de_compras_js.git",
+        "secondbtnName": "Github"
     }
 ]
