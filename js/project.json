@@ -50,13 +50,13 @@
         "secondbtnName": "Github"
     },
     {
-        "image": "laravel_login_crud",
-        "alt": "Laravel con login y CRUD",
-        "title": "Aplicación interactica(CRUD) y login con Laravel",
-        "description": "Web Application: Boostrap, Jquery(DataTables), PHP(Laravel) y SQL.",
-        "firstbtnLink": "",
+        "image": "laravel_react_vet",
+        "alt": "Laravel y reactjs para veterinarias",
+        "title": "Aplicación de gestionamiento y control de caja para veterinarias.",
+        "description": "Web Application: Tailwindcss, Javascript(ReactJs), PHP(Laravel) y MySql.",
+        "firstbtnLink": "https://senati.scriptify-peru.com",
         "firstbtnName": "Website",
-        "secondbtnLink": "https://github.com/Guillexd/Business_directory_Laravel.git",
+        "secondbtnLink": "",
         "secondbtnName": "Github"
     },
     {

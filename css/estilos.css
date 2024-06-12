@@ -229,10 +229,12 @@ main #projects #examples__container .examples .information__shadow{
   width: 100%;
   background-color: var(--black);
   transition: all .5s ease ;
+  padding: 10px;
 }
 
 main #projects #examples__container .examples figure:hover>.information__shadow{
   transform: translateY(-100%);
+  overflow-y: auto;
 }
 
 main #projects #examples__container .examples figure:hover img{

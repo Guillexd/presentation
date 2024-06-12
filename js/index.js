@@ -4,39 +4,45 @@ AOS.init({
 });
 
 const d = document;
-const btnFullScreen = d.querySelector('#fullScreenbtn');
+const btnFullScreen = d.querySelector("#fullScreenbtn");
 const body = d.documentElement;
 const projectsContainer = d.querySelector("#examples__container");
 const $fragment = d.createDocumentFragment();
 
-btnFullScreen.addEventListener('click', ()=>{
+btnFullScreen.addEventListener("click", () => {
   if (document.fullscreenElement) {
     // Si el documento está en pantalla completa, salir de ella
     if (document.exitFullscreen) {
       document.exitFullscreen();
-    } else if (document.mozCancelFullScreen) { /* Firefox */
+    } else if (document.mozCancelFullScreen) {
+      /* Firefox */
       document.mozCancelFullScreen();
-    } else if (document.webkitExitFullscreen) { /* Chrome, Safari y Opera */
+    } else if (document.webkitExitFullscreen) {
+      /* Chrome, Safari y Opera */
       document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) { /* Internet Explorer y Edge */
+    } else if (document.msExitFullscreen) {
+      /* Internet Explorer y Edge */
       document.msExitFullscreen();
     }
   } else {
     // Si el documento no está en pantalla completa, poner el elemento en pantalla completa
     if (body.requestFullscreen) {
       body.requestFullscreen();
-    } else if (body.mozRequestFullScreen) { /* Firefox */
+    } else if (body.mozRequestFullScreen) {
+      /* Firefox */
       body.mozRequestFullScreen();
-    } else if (body.webkitRequestFullscreen) { /* Chrome, Safari y Opera */
+    } else if (body.webkitRequestFullscreen) {
+      /* Chrome, Safari y Opera */
       body.webkitRequestFullscreen();
-    } else if (body.msRequestFullscreen) { /* Internet Explorer y Edge */
+    } else if (body.msRequestFullscreen) {
+      /* Internet Explorer y Edge */
       body.msRequestFullscreen();
     }
   }
-})
+});
 
 d.addEventListener("click", (e) => {
-  if (e.target.matches(".examples figure img") && window.innerWidth < 1000) {
+  if (e.target.matches(".examples figure img") && window.innerWidth < 1024) {
     const Redirection =
       e.target.closest("figure").lastElementChild.lastElementChild
         .lastElementChild;
@@ -82,7 +88,7 @@ fetch("./js/project.json")
         <figure>
           <img src="./assets/img/${el.image}.png" alt="${el.alt}">
           <div class="information__shadow d-flex flex-column justify-content-center align-items-center">
-            <h3>${el.title}</h3>
+            <h3 class="mt-4">${el.title}</h3>
             <span>${el.description}</span>
             <br class="d-none d-md-block">
             <div class="d-flex justify-content-around w-100">
@@ -105,11 +111,11 @@ fetch("./js/project.json")
                     ${el.firstbtnName}
                   </a>`
               }
-              <a class="btn btn-secondary" href="${
+              ${
                 el.secondbtnLink
-              }" target="_blank" rel="noopener noreferrer">${
-        el.secondbtnName
-      }</a>
+                  ? `<a class="btn btn-secondary" href="${el.secondbtnLink}" target="_blank" rel="noopener noreferrer">${el.secondbtnName}</a>`
+                  : `<a class="btn btn-secondary disabled" href="#" target="_blank" rel="noopener noreferrer">${el.secondbtnName}</a>`
+              }
             </div>
           </div>
         </figure>
