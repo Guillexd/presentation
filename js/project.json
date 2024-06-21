@@ -1,13 +1,13 @@
 [
     {
-        "image": "bus_vue_laravel",
-        "alt": "App desarrollada en Softiclab",
-        "title": "Aplicación para empresa de transporte de Softicslab",
-        "description": "Web Application: Desarrollada en Softicslab con Javascript(Vuejs), PHP(Laravel) y SQL.",
-        "firstbtnLink": "",
+        "image": "country_app",
+        "alt": "App desarrollada por mi",
+        "title": "Aplicación de busqueda de paises",
+        "description": "Web Application: Desarrollada con Html, CSS(Tailwindcss), Javascript(Reactjs) y json.",
+        "firstbtnLink": "https://guillexd.github.io/country_app/#/",
         "firstbtnName": "Website",
-        "secondbtnLink": "https://softicslab.com",
-        "secondbtnName": "Empresa"
+        "secondbtnLink": "https://github.com/Guillexd/country_app",
+        "secondbtnName": "Github"
     },
     {
         "image": "res_vue_laravel",
@@ -70,13 +70,13 @@
         "secondbtnName": "Github"
     },
     {
-        "image": "kar_js",
-        "alt": "Carrito_de_compras_js",
-        "title": "Carrito de compras",
-        "description": "Web Application: Html, CSS y Javascript.",
-        "firstbtnLink": "https://guillexd.github.io/Carrito_de_compras_js/",
+        "image": "ip_tracker",
+        "alt": "ip_tracker_js",
+        "title": "Ip Address Tracker",
+        "description": "Web Application: Html, CSS y Javascript(Reactjs) y paquetes npm.",
+        "firstbtnLink": "https://guillexd.github.io/ip_tracker/",
         "firstbtnName": "Website",
-        "secondbtnLink": "https://github.com/Guillexd/Carrito_de_compras_js.git",
+        "secondbtnLink": "https://github.com/Guillexd/ip_tracker",
         "secondbtnName": "Github"
     }
 ]
