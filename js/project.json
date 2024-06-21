@@ -10,6 +10,16 @@
         "secondbtnName": "Github"
     },
     {
+        "image": "laravel_react_vet",
+        "alt": "Laravel y reactjs para veterinarias",
+        "title": "Aplicación de gestionamiento y control de caja para veterinarias.",
+        "description": "Web Application: Tailwindcss, Javascript(ReactJs), PHP(Laravel) y MySql.",
+        "firstbtnLink": "https://senati.scriptify-peru.com",
+        "firstbtnName": "Website",
+        "secondbtnLink": "",
+        "secondbtnName": "Github"
+    },
+    {
         "image": "res_vue_laravel",
         "alt": "App desarrollada en Softiclab",
         "title": "Aplicación para restaurante interactica(CRUD)",
@@ -20,26 +30,6 @@
         "secondbtnName": "Empresa"
     },
     {
-        "image": "login_kar",
-        "alt": "Reactjs_Expressjs_mongoDB_Cookies",
-        "title": "Carrito de compras con Login",
-        "description": "Web Application: Html, CSS, Javascript(Reactjs), Nodejs(Express js), NoSQL(MongoDB) y Cookies.",
-        "firstbtnLink": "",
-        "firstbtnName": "Website",
-        "secondbtnLink": "https://github.com/Guillexd/React_Express_Project.git",
-        "secondbtnName": "Github"
-    },
-    {
-        "image": "chat_image",
-        "alt": "chat_weboscket_nodejs",
-        "title": "Aplicación de mensajería",
-        "description": "Web Application: Html, CSS, Javascript, Nodejs y websockets.",
-        "firstbtnLink": "",
-        "firstbtnName": "Website",
-        "secondbtnLink": "https://github.com/Guillexd/Chat_nodejs.git",
-        "secondbtnName": "Github"
-    },
-    {
         "image": "vuejs_app",
         "alt": "Vuejs_App",
         "title": "Aplicación con Vuejs",
@@ -47,16 +37,6 @@
         "firstbtnLink": "https://guillexd.github.io/Vuejs---api-exercise/",
         "firstbtnName": "Website",
         "secondbtnLink": "https://github.com/Guillexd/Vuejs---api-exercise.git",
-        "secondbtnName": "Github"
-    },
-    {
-        "image": "laravel_react_vet",
-        "alt": "Laravel y reactjs para veterinarias",
-        "title": "Aplicación de gestionamiento y control de caja para veterinarias.",
-        "description": "Web Application: Tailwindcss, Javascript(ReactJs), PHP(Laravel) y MySql.",
-        "firstbtnLink": "https://senati.scriptify-peru.com",
-        "firstbtnName": "Website",
-        "secondbtnLink": "",
         "secondbtnName": "Github"
     },
     {
@@ -77,6 +57,26 @@
         "firstbtnLink": "https://guillexd.github.io/ip_tracker/",
         "firstbtnName": "Website",
         "secondbtnLink": "https://github.com/Guillexd/ip_tracker",
+        "secondbtnName": "Github"
+    },
+    {
+        "image": "login_kar",
+        "alt": "Reactjs_Expressjs_mongoDB_Cookies",
+        "title": "Carrito de compras con Login",
+        "description": "Web Application: Html, CSS, Javascript(Reactjs), Nodejs(Express js), NoSQL(MongoDB) y Cookies.",
+        "firstbtnLink": "",
+        "firstbtnName": "Website",
+        "secondbtnLink": "https://github.com/Guillexd/React_Express_Project.git",
+        "secondbtnName": "Github"
+    },
+    {
+        "image": "chat_image",
+        "alt": "chat_weboscket_nodejs",
+        "title": "Aplicación de mensajería",
+        "description": "Web Application: Html, CSS, Javascript, Nodejs y websockets.",
+        "firstbtnLink": "",
+        "firstbtnName": "Website",
+        "secondbtnLink": "https://github.com/Guillexd/Chat_nodejs.git",
         "secondbtnName": "Github"
     }
 ]
