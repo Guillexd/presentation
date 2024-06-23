@@ -30,13 +30,13 @@
         "secondbtnName": "Empresa"
     },
     {
-        "image": "vuejs_app",
-        "alt": "Vuejs_App",
+        "image": "fractal_up_project",
+        "alt": "Vuejs_App_Graphql",
         "title": "Aplicación con Vuejs",
-        "description": "Web Application: Html, CSS, Javascript(Vuejs) y apis.",
-        "firstbtnLink": "https://guillexd.github.io/Vuejs---api-exercise/",
+        "description": "Web Application: Html, CSS, Javascript(Vuejs) y graphql(Vue-apolo).",
+        "firstbtnLink": "https://guillexd.github.io/vue-fractal-up/#/",
         "firstbtnName": "Website",
-        "secondbtnLink": "https://github.com/Guillexd/Vuejs---api-exercise.git",
+        "secondbtnLink": "https://github.com/Guillexd/vue-fractal-up",
         "secondbtnName": "Github"
     },
     {
