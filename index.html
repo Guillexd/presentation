@@ -27,7 +27,7 @@
   <!-- SEO -->
   <title>Guille / Developer</title>
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  
+
   <!-- TIDIO -->
   <!-- <script src="//code.tidio.co/hijmfiouhl0svawr9stfgdcquqly56l7.js" async></script> -->
 </head>
@@ -64,6 +64,46 @@
       </div>
     </nav>
   </header>
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div class="toast show shadow-lg border-0 animate__animated animate__fadeInUp">
+
+      <!-- Header -->
+      <div class="toast-header bg-dark text-white">
+        <i class="fa-solid fa-user-astronaut me-2 text-warning"></i>
+        <strong class="me-auto">Nuevo Portfolio</strong>
+        <small class="text-light">Actualizado</small>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="toast-body">
+
+        <!-- Mensaje principal -->
+        <div class="fw-semibold mb-2">
+          He lanzado mi nuevo portfolio
+        </div>
+
+        <!-- Descripción -->
+        <p class="text-muted mb-3" style="font-size: 0.9rem;">
+          Descubre mis proyectos más recientes, experiencia actualizada
+          y un diseño completamente renovado.
+        </p>
+
+        <!-- CTA -->
+        <div class="d-flex justify-content-between align-items-center">
+          <small class="text-muted">Enrique Guillermo</small>
+
+          <a href="https://guille-portfolio.web.app" target="_blank"
+            class="btn btn-warning btn-sm fw-semibold d-flex align-items-center gap-2 px-3 shadow-sm">
+
+            Ver portfolio
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <main class="d-flex flex-wrap">
     <div id="home" class="d-flex flex-column justify-content-center align-items-center secciones" data-aos="fade-right">
       <h2 class="title">Home</h2>
@@ -72,17 +112,19 @@
         alt="porgramming.jpg" height=200px">
       <div id="home__presentation" class="text-center">
         <span id="home__name">Enrique Guillermo</span><br>
-        <span id="home__desc">Desarrollador</span>
+        <span id="home__desc">Desarrollador de Software</span>
       </div>
     </div>
     <div id="about" class="secciones">
       <h2 class="title">Sobre mí</h2>
       <h3 class="subtitle__about col-11">Desarrollador / Estudiante de Ingeniería de Software</h3>
       <div class="content__about col-10 col-xl-6" data-aos="fade-down">
-        <p class="pt-3">Disfruto el desarrollo por la satisfacción que obtengo al superar los desafíos. Estoy motivado por la
+        <p class="pt-3">Disfruto el desarrollo por la satisfacción que obtengo al superar los desafíos. Estoy motivado
+          por la
           oportunidad que brinda el software para impactar positivamente en la vida de un individuo y el mundo en su
           conjunto.</p>
-        <a class="btn btn-primary btn-lg fs-6 col-12 col-lg-auto" download="enrique_guillermo_cv" href="./CV.pdf">Descargar CV</a>
+        <a class="btn btn-primary btn-lg fs-6 col-12 col-lg-auto" download="enrique_guillermo_cv"
+          href="./CV.pdf">Descargar CV</a>
       </div>
       <h3 class="subtitle__skills">Tecnologías</h3>
       <div class="content__skills">
@@ -126,7 +168,8 @@
     </div>
     <div id="projects" class="d-flex flex-column">
       <h2 class="text-center pt-3">Proyectos</h2>
-      <div id="examples__container" class="d-flex flex-column flex-lg-row flex-wrap justify-content-center align-item-center gap-2 text-center">
+      <div id="examples__container"
+        class="d-flex flex-column flex-lg-row flex-wrap justify-content-center align-item-center gap-2 text-center">
 
       </div>
     </div>
